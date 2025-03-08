@@ -5,21 +5,21 @@
 class Tfapp < Formula
   desc "A TUI Terraform management application"
   homepage "https://github.com/sapasapasapa/tfapp"
-  version "0.2.4"
+  version "0.2.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sapasapasapa/tfapp/releases/download/v0.2.4/tfapp_Darwin_x86_64.zip"
-      sha256 "b426506ca07cabc5c2fffeefade391f9b32d979337a5a322dd7dbf766ad1a8e2"
+      url "https://github.com/sapasapasapa/tfapp/releases/download/v0.2.5/tfapp_Darwin_x86_64.zip"
+      sha256 "00a9dc4f5eb8398d8e8be7c1bba7a6d1b8e16dfea25df448eec8dde82b0fa319"
 
       def install
         bin.install "tfapp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sapasapasapa/tfapp/releases/download/v0.2.4/tfapp_Darwin_arm64.zip"
-      sha256 "4ebcc65076f51f37cfae8a8114a789842bd97d3676b899aa8a95a6f00996ae67"
+      url "https://github.com/sapasapasapa/tfapp/releases/download/v0.2.5/tfapp_Darwin_arm64.zip"
+      sha256 "a533aee201ea4211b397879eff09544e36d6c548f3c0b931de24cb8c43f573d4"
 
       def install
         bin.install "tfapp"
@@ -30,8 +30,8 @@ class Tfapp < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/sapasapasapa/tfapp/releases/download/v0.2.4/tfapp_Linux_x86_64.tar.gz"
-        sha256 "322ce991646d6cb4f192a580bb6bdf0a67f429f046c3464e6be93dbbc05ab661"
+        url "https://github.com/sapasapasapa/tfapp/releases/download/v0.2.5/tfapp_Linux_x86_64.tar.gz"
+        sha256 "a529e05e184964effaf1b9f12e13417b121cacf29fa53afc0315b10e51072080"
 
         def install
           bin.install "tfapp"
@@ -40,8 +40,8 @@ class Tfapp < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/sapasapasapa/tfapp/releases/download/v0.2.4/tfapp_Linux_arm64.tar.gz"
-        sha256 "50958620d3b22244d083c1d0201ba546dae0914a152e114f9b543faeb4b042a3"
+        url "https://github.com/sapasapasapa/tfapp/releases/download/v0.2.5/tfapp_Linux_arm64.tar.gz"
+        sha256 "48d6b404e90366ae21923a48a3eefd7062e2ebedede094723bd0c507cb5cb866"
 
         def install
           bin.install "tfapp"
