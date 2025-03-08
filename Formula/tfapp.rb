@@ -11,7 +11,7 @@ class Tfapp < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/sapasapasapa/tfapp/releases/download/v0.2.2/tfapp_Darwin_x86_64.zip"
-      sha256 "28134cadf7d6977cd1f72e3905b706dbbe096168d0907b00923ad6df75b44daf"
+      sha256 "035ff90afbcdbeab4eea4fe388e31286a725545a2dfee001f1003bbb0c4ec8b3"
 
       def install
         bin.install "tfapp"
@@ -19,7 +19,7 @@ class Tfapp < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/sapasapasapa/tfapp/releases/download/v0.2.2/tfapp_Darwin_arm64.zip"
-      sha256 "acea895c7c102dea9c9711272fd362012ea0ffa5c0a2d0c48e3c6a40e05381f2"
+      sha256 "5de92ae8eee25533d5fc3dd85fbda9173332407a30f81b9e514e9baf22cccfd8"
 
       def install
         bin.install "tfapp"
@@ -31,7 +31,7 @@ class Tfapp < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/sapasapasapa/tfapp/releases/download/v0.2.2/tfapp_Linux_x86_64.tar.gz"
-        sha256 "ba9a1530d4b5ba8ede4435a4c08c8666ee8bc41b70ebfb58ba7f3213d4b08d2e"
+        sha256 "8007ff956167a85a4391382e3426ec7afd448e2061fdd3de7fc02f33bd4ce1e5"
 
         def install
           bin.install "tfapp"
@@ -41,7 +41,7 @@ class Tfapp < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/sapasapasapa/tfapp/releases/download/v0.2.2/tfapp_Linux_arm64.tar.gz"
-        sha256 "c9521a7bedde294498b5ff48ea2fd0b214ff1d89940ec9e0d62912e99ea4d49c"
+        sha256 "3962da73fad30f389babaed22548c20221c9a798633a8dc6097586bfefd12071"
 
         def install
           bin.install "tfapp"
