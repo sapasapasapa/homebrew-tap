@@ -3,8 +3,8 @@ class GhaPinner < Formula
 
   desc "📌 Pin third-party Github Actions using the commit SHA"
   homepage "https://github.com/sapasapasapa/gha-pinner"
-  url "https://github.com/sapasapasapa/gha-pinner/archive/v0.1.1.tar.gz"
-  sha256 "7596759ea3c6eb1757740b412532abdcfd0a8ecc4bb2485bbe547af5fcf7d762"
+  url "https://github.com/sapasapasapa/gha-pinner/archive/v0.1.2.tar.gz"
+  sha256 "8d42fe9241629de67583a95abf3aa3de86d00dfd114c859b1bf5f24d9ae7071d"
   license "MIT"
   head "https://github.com/sapasapasapa/gha-pinner.git", branch: "master"
 
@@ -20,6 +20,6 @@ class GhaPinner < Formula
   end
 
   test do
-    assert_match "gha-pinner v0.1.1", shell_output("#{bin}/gha-pinner --version")
+    assert_match "gha-pinner v0.1.2", shell_output("#{bin}/gha-pinner --version")
   end
 end
