@@ -4,7 +4,7 @@ class GhaPinner < Formula
   desc "📌 Pin third-party Github Actions using the commit SHA"
   homepage "https://github.com/sapasapasapa/gha-pinner"
   url "https://github.com/sapasapasapa/gha-pinner/archive/v0.1.1.tar.gz"
-  sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+  sha256 "7596759ea3c6eb1757740b412532abdcfd0a8ecc4bb2485bbe547af5fcf7d762"
   license "MIT"
   head "https://github.com/sapasapasapa/gha-pinner.git", branch: "master"
 
@@ -12,7 +12,7 @@ class GhaPinner < Formula
 
   resource "requests" do
     url "https://files.pythonhosted.org/packages/63/70/2bf7780ad2d390a8d301ad0b550f1581eadbd9a20f896afe06353c2a2913/requests-2.32.3.tar.gz"
-    sha256 "55365417734eb18255590a9f9a0bb3a9e1da89e73c8b3e6e24f8b8f6d1b8c6e2"
+    sha256 "55365417734eb18255590a9ff9eb97e9e1da868d4ccd6402399eaf68af20a760"
   end
 
   def install
