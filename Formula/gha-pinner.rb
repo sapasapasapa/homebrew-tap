@@ -23,3 +23,4 @@ class GhaPinner < Formula
       assert_match "gha-pinner v0.1.0", shell_output("#{bin}/gha-pinner --version")
     end
   end
+  
